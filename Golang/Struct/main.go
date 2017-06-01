@@ -17,6 +17,14 @@ type computer struct {
 	owns bool
 }
 
+func (s student) Greet() string {
+	return "Boo"
+}
+
+func (c computer) Greet() string {
+	return "Booyeah"
+}
+
 func main() {
 	var raghu student
 	raghu.age = 27
@@ -40,5 +48,8 @@ func main() {
 	fmt.Println(rajath.fullName())
 	fmt.Println(raghu.fullName())
 	fmt.Println(aish.fullName())
+	fmt.Println(rajath.Greet())
+	fmt.Println(raghu.Greet())
+	fmt.Println(aish.Greet())
 
 }
